@@ -5,15 +5,15 @@
 }
 
 // Colours
-@black : #333538;
-@white : #FFFFFF;
-@grey  : #E7E9ED;
-@green : #4BC0C0;
-@red   : #FF6384;
-@blue  : #2374AB;
-@yellow: #FFCE56;
-
-@corn: #eee9db;
+@black     : #333538;
+@white     : #FFFFFF;
+@grey      : #E7E9ED;
+@green     : #4BC0C0;
+@red       : #FF6384;
+@blue      : #2374AB;
+@yellow    : #FFCE56;
+@octo-green: #64CEAA;
+@corn      : #eee9db;
 
 @overlap    : 300px;
 @article_gap: 20px;
@@ -35,15 +35,15 @@ body {
 }
 
 h1 {
-  font-size : 520%;
-  margin    : 0;
-  text-align: left;
+  font-size    : 450%;
+  margin       : 0;
+  // text-align: left;
 }
 
 h2 {
-  margin    : 1em 0;
-  margin-top: 0;
-  text-align: left;
+  margin          : 0;
+  // margin-top   : 0;
+  // text-align: left;
 }
 
 hr {
@@ -67,9 +67,57 @@ header {
   // padding-bottom    : 20px+@overlap;
   padding-left         : 2em;
   padding-right        : 2em;
+  padding-bottom       : 1em;
   text-align           : center;
   height               : 100vh;
 
+  display           : flex;
+  justify-content   : space-between;
+  // height         : 100%;
+  flex-direction    : column;
+
+  img {
+    margin-right: 0.5em;
+    width       : 2em;
+  }
+
+  div.centered {
+    // opacity: 0.6;
+    color        : @black;
+    margin-bottom: 10px;
+  }
+
+  div.info {
+    margin   : 0 auto;
+    max-width: 800px;
+
+    div.links {
+      margin-top: 1em;
+      display   : grid;
+
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap      : 20px;
+      grid-row-gap         : 20px;
+
+      a.btn {
+        font-size                    : 150%;
+        // border                 : 3px solid lighten(@blue, 20%);
+        // background                : lighten(@blue, 20%);
+        background                   : @octo-green;
+        color                        : @white;
+        border-radius                : 5px;
+        padding                      : 5px;
+        min-width                    : 10em;
+        text-align                   : center;
+      }
+    }
+  }
+
+}
+
+div.centered {
+  display    : flex;
+  align-items: center;
 }
 
 article {}
