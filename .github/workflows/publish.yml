@@ -30,7 +30,7 @@ jobs:
           npm --version
           node --version
           npx parcel --version
-          npx parcel build index.pug
+          npx parcel build --public-url "./" index.pug
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
