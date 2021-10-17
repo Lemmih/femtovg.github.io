@@ -1,0 +1,75 @@
+@font-face {
+  font-family : 'VarelaRound';
+  font-display: optional;
+  src         : url('VarelaRound-Regular.ttf') format('truetype');
+}
+
+// Colours
+@black : #333538;
+@white : #FFFFFF;
+@grey  : #E7E9ED;
+@green : #4BC0C0;
+@red   : #FF6384;
+@blue  : #2374AB;
+@yellow: #FFCE56;
+
+@corn: #eee9db;
+
+@overlap    : 300px;
+@article_gap: 20px;
+
+@small-screen-query: ~"screen and (max-width: 978px)";
+@tablet-query      :~"screen and (max-width: 768px)";
+@mobile-query      :~"screen and (max-width: 500px)";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin     : 0;
+  font-size  : 18px;
+  font-family: 'VarelaRound', 'Lato', sans-serif;
+  background : @white;
+}
+
+h1 {
+  font-size : 520%;
+  margin    : 0;
+  text-align: left;
+}
+
+h2 {
+  margin    : 1em 0;
+  margin-top: 0;
+  text-align: left;
+}
+
+hr {
+  width           : 50%;
+  background-color: transparent;
+  border          : 0;
+  border-bottom   : 1px solid @grey;
+  margin          : 40px auto;
+}
+
+header {
+  a {
+    text-decoration: none;
+    color          : @black;
+  }
+
+  background           : @corn;
+  // background     : linear-gradient(180deg, @corn 0%, @corn 25%, @white 100%);
+  color                : @black;
+  padding-top          : 40px;
+  // padding-bottom    : 20px+@overlap;
+  padding-left         : 2em;
+  padding-right        : 2em;
+  text-align           : center;
+  height               : 100vh;
+
+}
+
+article {}
