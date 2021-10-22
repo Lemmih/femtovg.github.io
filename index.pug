@@ -24,8 +24,10 @@ header
       | femtovg
     h2 2D Vector Graphics in Rust
   div.info
-    | The femtovg crate provides a GPU-accelerated 2D drawing API similar to that of HTML5 Canvas.
-    | The latest version (v#{version}) was released #{release_date}.
+    //- | The femtovg crate provides a GPU-accelerated 2D drawing API similar to that of HTML5 Canvas.
+    //- | The latest version (v#{version}) was released #{release_date}.
+    //- | Version: v#{version}<br/>
+    //- | Released: #{release_date}
     div.links
       a.btn(href="https://docs.rs/femtovg/" + version + "/femtovg/")
         | Documentation
@@ -34,10 +36,10 @@ header
       a.btn(href="https://discord.gg/V69VdVu")
         | Discord Chat
       a.btn(href="https://discord.gg/V69VdVu")
-        | Online Examples
+        | Showcase
   div
     div.centered
-      | <img src="github.svg"/> #{stars} stargazers
+      | <img src="github.svg"/> #{stars} stargazers, v#{version} was released #{release_date}
     div.centered
       | <img src="license.svg"/> Apache 2.0 or MIT
     div.centered
